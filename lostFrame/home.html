@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./css/img/caman_logo_green.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/glider-min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Caman | Online Photo Editor</title>
+</head>
+<body>
+    <div class="pre-loader">
+        <img src="./css/img/caman_logo_green.svg" alt="Caman" class="pre-loader__img">
+        <h2 class="heading-secondary mg-lf-3">
+            Caman
+        </h2>
+    </div>
+    <header class="row header" id="caman">
+        <nav class="header__nav">
+            <a href="#caman" class="caman-n"><img src="./css/img/caman_logo_green.svg" alt="logo" class="header__logo--top mg-bt-s">
+            <h1 class="heading-primary">Caman.</h1></a>
+        </nav>
+    </header>
+    <section class="row upload">
+        <canvas class="upload__canvas" id="canvas"></canvas>
+        <button class="btn btn--delete"><img src="./css/img/delete-ico.svg" alt="delete" class="delete-btn"></button>
+        <div class="upload--wrapper">
+            <input type="file" class="upload--file">
+            <a href="#" class="btn btn--upload">
+                <img src="./css/img/upload_logo_yellow.svg" alt="" class="upload__logo">
+                <span class="upload__text">Click here to upload</span>
+            </a>
+        </div>
+    </section>
+    <section class="row filters">
+        <h2 class="heading-secondary">Filters</h2>
+        <div class="glider-container multiple filters__slider">
+            <button class="glider-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="glider">
+                <button class="btn btn--filters filter-btn vintage-add">Vintage</button>
+                <button class="btn btn--filters filter-btn lomo-add mg-lf-3">Lomo</button>
+                <button class="btn btn--filters filter-btn clarity-add mg-lf-3">Clarity</button>
+                <button class="btn btn--filters filter-btn sincity-add mg-lf-3">Sin City</button>
+                <button class="btn btn--filters filter-btn sunrise-add mg-lf-3">Sunrise</button>
+                <button class="btn btn--filters filter-btn orangepeel-add mg-lf-3">Orange Peel</button>
+                <button class="btn btn--filters filter-btn love-add mg-lf-3">love</button>
+                <button class="btn btn--filters filter-btn grungy-add mg-lf-3">Grungy</button>
+                <button class="btn btn--filters filter-btn jarques-add mg-lf-3">Jarques</button>
+                <button class="btn btn--filters filter-btn pinhole-add mg-lf-3">Pinhole</button>
+                <button class="btn btn--filters filter-btn oldboot-add mg-lf-3">Old Boot</button>
+                <button class="btn btn--filters filter-btn glowingsun-add mg-lf-3">Glowing Sun</button>
+                <button class="btn btn--filters filter-btn hazydays-add mg-lf-3">Hazy Days</button>
+                <button class="btn btn--filters filter-btn hermajesty-add mg-lf-3">Her Majesty</button>
+                <button class="btn btn--filters filter-btn nostalgia-add mg-lf-3">Nostalgia</button>
+                <button class="btn btn--filters filter-btn concentrate-add mg-lf-3">Concenterate</button>
+            </div>
+            <button class="glider-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+    <section class="row basic-ctrl">
+        <h2 class="heading-secondary mg-bt-3">Basic Controls</h2>
+        <div class="basic-ctrl--wrapper">
+            <div class="btn-group">
+                <button class="btn btn--sub brightness-remove filter-btn">-</button>
+                <button class="btn btn--disabled">Brightness</button>
+                <button class="btn btn--add brightness-add filter-btn">+</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn--sub contrast-remove filter-btn">-</button>
+                <button class="btn btn--disabled">Contrast</button>
+                <button class="btn btn--add contrast-add filter-btn">+</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn--sub saturation-remove filter-btn">-</button>
+                <button class="btn btn--disabled">Saturation</button>
+                <button class="btn btn--add saturation-add filter-btn">+</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn--sub vibrance-remove filter-btn">-</button>
+                <button class="btn btn--disabled">Vibrance</button>
+                <button class="btn btn--add vibrance-add filter-btn">+</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn--sub exposure-remove filter-btn">-</button>
+                <button class="btn btn--disabled">Exposure</button>
+                <button class="btn btn--add exposure-add filter-btn">+</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn--sub hue-remove filter-btn">-</button>
+                <button class="btn btn--disabled filter-btn">Hue</button>
+                <button class="btn btn--add hue-add filter-btn">+</button>
+            </div>
+        </div>
+    </section>
+    <section class="row download">
+        <button class="btn btn--download">
+            Download
+        </button>
+        <button class="btn btn--clear mg-lf-3">
+            Clear Filters
+        </button>
+    </section>
+    <section class="row how-it-works clear-fix">
+        <h1 class="how-it-works--heading">how it works &mdash; simple as 1,2,3</h1>
+        <div class="how-it-works__img-section">
+            <img src="./css/img/about_us.svg" alt="how-it-works" class="how-it-works--img">
+        </div>
+        <div class="how-it-works__write-up">
+            <div class="how-it-works--steps">
+                <div>1</div>
+                <p>Click on upload button</p>
+            </div>
+            <div class="how-it-works--steps">
+                <div>2</div>
+                <p>Select image from your local storage</p>
+            </div>
+            <div class="how-it-works--steps">
+                <div>3</div>
+                <p>Appy filters from filter section or use basic controls</p>
+            </div>
+            <div class="how-it-works--steps">
+                <div>4</div>
+                <p>Click on download button to save image</p>
+            </div>
+        </div>  
+    </section>
+    <footer class="footer">
+        <div class="row footer__wrapper">
+            <div class="footer__logo">
+                <img src="./css/img/caman_logo_green.svg" alt="logo" class="footer--logo">
+                <h1 class="heading-primary">Caman.</h1>
+            </div>
+            <div class="footer__git">
+                <a href="https://github.com/s2-sengar/caman" class="footer--git-link"><img src="./css/img/gitrepoLink.svg" alt="gitRepoLink" class="footer__img--git"></a>
+                <a href="https://github.com/s2-sengar" class="footer--git-link"><img src="./css/img/git acc-link.svg" alt="gitAccLink" class="footer__img--git"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/0419257eaf.js" crossorigin="anonymous"></script>
+    <script src="./glider-min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.pack.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
